@@ -39,4 +39,49 @@ python scripts/preprocess/data/orquac/qa/convert_qa_train.py
 python scripts/preprocess/data/orquac/qa/convert_qa_test.py
 ```
 
+## Run
+We start training a cross encoder.
+```bash
+bash scripts/run/orquac/1_train_cross.sh
+```
+Then, we train a phrase retriever.
+```bash
+bash scripts/run/orquac/2_train.sh
+```
 
+We generate vectors of the Wikipedia.
+Here, we generate vectors in parallel.
+```bash
+bash scripts/run/orquac/3_gen_vec.sh
+```
+
+Now, we create a phrase index.
+```bash
+bash scripts/run/orquac/4_index.sh
+bash scripts/run/orquac/5_compress.sh
+```
+
+Lastly, we further finetune and evaluate a query-side encoder.
+```bash
+bash scripts/run/orquac/6_query_finetune.sh
+bash scripts/run/orquac/7_query_finetune_eval.sh
+```
+
+## Citation
+If you found the provided code with our paper useful, we kindly request that you cite our work.
+```BibTex
+@inproceedings{jeong-etal-2023-phrase,
+    title = "Phrase Retrieval for Open Domain Conversational Question Answering with Conversational Dependency Modeling via Contrastive Learning",
+    author = "Jeong, Soyeong  and
+      Baek, Jinheon  and
+      Hwang, Sung Ju  and
+      Park, Jong",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2023",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-acl.374",
+    pages = "6019--6031",
+}
+```

@@ -1,0 +1,6 @@
+outputs/
+densephrases-data/
+cache/
+wandb/
+__pycache__/
+densephrases.egg-info/

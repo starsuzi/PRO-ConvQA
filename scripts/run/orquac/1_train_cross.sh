@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0 make train-cross-orquac MODEL_NAME=spanbert-base-cased-orquac
