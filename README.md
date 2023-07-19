@@ -1,6 +1,6 @@
 # Phrase Retrieval for Open-Domain Conversational Question Answering with Conversational Dependency Modeling via Contrastive Learning
 
-Official Code Repository for the paper "Phrase Retrieval for Open-Domain Conversational Question Answering with Conversational Dependency Modeling via Contrastive Learning" (Findings of ACL 2023): https://arxiv.org/pdf/2306.04293.pdf
+Official Code Repository for the paper "Phrase Retrieval for Open-Domain Conversational Question Answering with Conversational Dependency Modeling via Contrastive Learning" (Findings of ACL 2023): https://aclanthology.org/2023.findings-acl.374.pdf
 
 ## Abstract
 
