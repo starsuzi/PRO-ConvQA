@@ -269,7 +269,7 @@ index-merge: dump-dir large-index-sq
 orquac-open-data:
 	$(eval TRAIN_DATA=convqa/orquac/preprocessed/qa/train_answer_6.json)
 	$(eval TEST_DATA=convqa/orquac/preprocessed/qa/test_answer_6.json)
-	$(eval OPTIONS=--truecase)
+# 	$(eval OPTIONS=--truecase)
 
 
 # Query-side fine-tuning
